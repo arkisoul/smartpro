@@ -1,0 +1,54 @@
+Competition Management
+
+Get Competition Types
+  => URL -> competition-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> getCompetitionType
+    => Keys -> {"fetch": "all"}
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'CompetitionTypes': [{EngineerTypeId, EngineerType}]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Get all Competitions
+  => URL -> competition-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> getAllCompetition
+    => Keys -> {"fetch": "all"}
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Competitions': [Id, CustomerId, CompetitionName, CompetitionType, Amount, SpecificationImage, StartDate, EndDate, CreateDate]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Add New Competition
+  => URL -> attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (addCompetition), CustomerId, CompetitionName, CompetitionType, Amount, SpecificationImage (file), StartDate, EndDate
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Update Competition
+  => URL -> attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys ->Action (updatedCompetition), Id(Competition), CustomerId, CompetitionName, CompetitionType, Amount, SpecificationImage (file), StartDate, EndDate
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Delete a Competition
+  => URL -> competition-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> deleteCompetition
+    => Keys -> CompetitionId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

@@ -1,0 +1,15 @@
+We are saving record like this
+Letter(Inbox/outbox)
+--http://mysmartpro.com/Documents/AL1632/5001001/Letter Documents/5b20692d_AL1632SoftwareDevelopment(1).doc
+Reports
+--http://mysmartpro.com/Documents/AL1632/5001001/Report Documents/91c2886b1_AL1632a9e10b7a_AlmaskanARCH.dwg
+DocumentsNeedApproval
+--http://mysmartpro.com/Documents/AL1632/5001001/Projects Documents/b0370263_AL1632id1.jpg
+Comments and reply comments saved here
+
+http://mysmartpro.com/Documents/AL1632/Customer Documents/0565779237_AL1632_3_download(1).xls
+That is saved in under the customer documents
+
+Base URL: http://www.mysmartpro.com/smartproapi/api/
+
+Documents\AL1632\Customer Documents

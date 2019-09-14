@@ -1,0 +1,23 @@
+Doc Management
+
+Get Docs =>
+  => URL -> http://webprojects.work/smartpro/api/doc-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> getdocs
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'DocDetails': ['DocumentAttachID': '', 'Subject': '', 'AttachTypeId': '', 'AttachDate': '', 'Url': '', 'Feedback': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Update =>
+  => URL -> http://webprojects.work/smartpro/api/doc-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> update
+    => Keys -> DocumentAttachID, Status (Approved/Rejected/Need Decision), Feedback
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

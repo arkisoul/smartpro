@@ -1,0 +1,23 @@
+Report Management
+
+Get Reports =>
+  => URL -> http://webprojects.work/smartpro/api/report-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> getreports
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Reports': ['ReportID': '', 'ReportDate': '', 'Images': '', 'ReportDetail': '', 'Comment': '', 'ReportDoc': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Images Specific to a Report =>
+  => URL -> http://webprojects.work/smartpro/api/report-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> getimages
+    => Keys -> ReportID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ReportID': '', 'Images': ['img1', 'img2', 'img3',..., imgN]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

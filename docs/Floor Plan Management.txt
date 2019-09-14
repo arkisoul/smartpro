@@ -1,0 +1,39 @@
+************ Floor Plan Management Document ************
+
+1. Get Floor Type
+    => file:: floorplan-management.php
+    => request_method:: POST/x-www-form-urlencoded
+    => request_type:: json string
+    => request_string:: getFloorTypes = {}
+    => response_string:: {"ResponseCode":"200","ResponseMsg":"Success","FloorPlans":[{"FloorTypeId":1,"FloorType":"ONE FLOOR"},{"FloorTypeId":2,"FloorType":"Private Service Block"},{"FloorTypeId":3,"FloorType":"Two Storey"}]}
+
+2. Get Floor Plan Details
+    => file:: floorplan-management.php
+    => request_method:: POST/x-www-form-urlencoded
+    => request_type:: json string
+    => request_string:: getFloorPlanDetails = {"FloorTypeId": "1"}
+    => response_string:: {"ResponseCode":"200","ResponseMsg":"Floor plan details","FloorPlanDetails":[{"ItemName":"Excavation","Quantity":"500.000000","UnitPrice":"20.0000","Percentage":"2.00","ItemPrice":"10000.000000"},{"ItemName":"concrete","Quantity":"170.455000","UnitPrice":"220.0000","Percentage":"7.50","ItemPrice":"37500.100000"},]}
+
+3. Send Floor Plan Request
+    => file:: floorplan-management.php
+    => request_method:: POST/x-www-form-urlencoded
+    => request_type:: json string
+    => request_string:: sendFloorPlanRequest = {"FloorTypeId": "1", "UserID": "0521346850"}
+    => response_string:: {"ResponseCode":"200","ResponseMsg":"Request sent successfully."}
+    => response_string:: {"ResponseCode":"201","ResponseMsg":"We are unable to send your request at the moment. Please try again later."}
+
+4. Get floor plan requests of a customer
+    => file:: floorplan-management.php
+    => request_method:: POST/x-www-form-urlencoded
+    => request_type:: json string
+    => request_string:: getFloorPlanRequests = {"UserID": "0521346850"}
+    => response_string:: {"ResponseCode":"200","ResponseMsg":"Floor plan requests","Requests":["RequestId":"", "FloorType":"", "FloorTypeId":"", "RequestedDate":"", ]}
+    => response_string:: {"ResponseCode":"201","ResponseMsg":"You haven't made any floor plan request","Requests":[]}
+
+5. Send Floor Plan Request
+    => file:: floorplan-management.php
+    => request_method:: POST/x-www-form-urlencoded
+    => request_type:: json string
+    => request_string:: getFloorPlanRequestDetail = {"RequestId": "1"}
+    => response_string:: {"ResponseCode":"201","ResponseMsg":"Request detail", "RequestDetail": ["ItemName": "", "UnitPrice": "", "Quantity": "", "ItemPrice": "", ]}
+    => response_string:: {"ResponseCode":"201","ResponseMsg":"No record found"}

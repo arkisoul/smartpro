@@ -1,0 +1,87 @@
+Property Management
+
+Fetch All => From PropertyType Table
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> get-all-property-types
+    => Keys -> {"fetch": "all"}
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'PropertyTypes': [{'PropertyTypeId': '', 'PropertyTypeName':'', 'Descriptions':''}]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Fetch Property Type By id
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> get-property-type-by-id
+    => Keys -> PropertyTypeId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'PropertyTypeId': '', 'PropertyTypeName':'', 'Descriptions':'']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Add New => Property Request
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> add-property-request
+    => Keys -> UserId, PropertyId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Add New Property
+  => URL -> http://webprojects.work/smartpro/api/attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (add-property), UserId, PropertyTypeId, CountryId, StateId, CountryName, StateName, City, Latitude, Longitude, Address, TypeId, Type, LandSqrFt, BuildingSqrFt, Amount, Attach (File:max 3)
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Update Property Details
+  => URL -> http://webprojects.work/smartpro/api/attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (update-property), PropertyId, UserId, PropertyTypeId, CountryId, StateId, CountryName, StateName, City, Latitude, Longitude, Address, TypeId, Type, LandSqrFt, BuildingSqrFt, Amount, Attach (File:max 3)
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Delete a Property
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> delete-property
+    => Keys -> PropertyId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Get property of a User
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> get-properties-user
+    => Keys -> UserId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Properties': [{PropertyId, UserId, PropertyTypeId, CountryId, StateId, CountryName, StateName, City, Latitude, Longitude, Address, TypeId, Type, LandSqrFt, BuildingSqrFt, Amount, Attachment1, Attachment2, Attachment3, CreatedAt}]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Get property of that does not belong to the User
+  => URL -> http://webprojects.work/smartpro/api/property-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> get-properties-not-user
+    => Keys -> UserId
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Properties': [{PropertyId, UserId, PropertyTypeId, CountryId, StateId, CountryName, StateName, City, Latitude, Longitude, Address, TypeId, Type, LandSqrFt, BuildingSqrFt, Amount, Attachment1, Attachment2, Attachment3, CreatedAt}]
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

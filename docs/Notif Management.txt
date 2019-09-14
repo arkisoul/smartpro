@@ -1,0 +1,34 @@
+Notification Management
+
+Get Notification =>
+  => File -> notify.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> get-notify
+    => Keys -> CustomerID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Notifs': ['ID': '', 'ProjectId': '', 'Title': '', 'Msg': '', 'Date&Time': '', 'Type': '', 'Status': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Delete =>
+  => File -> notify.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> delete-notify
+    => Keys -> CustomerID, ID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Delete All =>
+  => File -> notify.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> delete-all
+    => Keys -> CustomerID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

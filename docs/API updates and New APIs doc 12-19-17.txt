@@ -1,0 +1,63 @@
+API updates and New APIs doc
+
+#1 LoginAs (New)
+    * File: NewUserManagement.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: login-as
+    * Request keys: json-string = {"LoginAs", "UserID"}
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: ''}
+        @ Error: {ResponseCode: 201, ResponseMsg: ''}
+
+#2 Unique Mobile (New)
+    * File: NewUserManagement.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: unique-mobile
+    * Request keys: json-string = {"Mobile"}
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: 'Unique mobile'}
+        @ Error: {ResponseCode: 201, ResponseMsg: 'Already registered'}
+
+#3 Unique Email (New)
+    * File: NewUserManagement.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: unique-email
+    * Request keys: json-string = {"Email"}
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: 'Unique email'}
+        @ Error: {ResponseCode: 201, ResponseMsg: 'Already registered'}
+
+#4 Login (Updated)
+    * File: NewUserManagement.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: login
+    * Request keys: json-string = {"LoginAs"} New key
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: ''}
+        @ Error: {ResponseCode: 201, ResponseMsg: ''}
+    * Remarks: Removed CompanyID from user login verification
+
+#5 SaveInviteContractor (Updated)
+    * File: contractor-management.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: SaveInviteContractor
+    * Request keys: unchanged
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: ''}
+        @ Error: {ResponseCode: 201, ResponseMsg: ''}
+    * Remarks: Add NeedSuggestfromCust value respectively for Consultant and Contractor as discussed
+
+#6 Add suggestion
+    * File: suggestion.php
+    * Request type: HTTP Header / x-www-form-urlencoded
+    * Request method: POST
+    * Parent key: add-suggestion
+    * Request keys: CustomerID, ProjectID(Optional), Suggestion
+    * Response:
+        @ Success: {ResponseCode: 200, ResponseMsg: ''}
+        @ Error: {ResponseCode: 201, ResponseMsg: ''}

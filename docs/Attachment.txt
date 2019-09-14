@@ -1,0 +1,29 @@
+Attachment Management
+
+Project Attachment
+  => File -> attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (project-doc), CompanyID, ProjectID, Attach
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Attachment': ''
+
+Attachment
+  => File -> attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (attachment), Attach, CompanyID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Attachment': ''
+
+User Image
+  => File -> attachment.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (user-image), Attach, CompanyID, CustomerID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Attachment': ''
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

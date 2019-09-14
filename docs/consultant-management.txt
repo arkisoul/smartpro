@@ -1,0 +1,135 @@
+Consultant Management
+
+######################view-quotes web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> view-quotes
+    => Keys -> {"UserID":"","ProjectId":""}
+  => Response -> JSON String
+    => {
+    "ResponseCode": "200",
+    "ResponseMsg": "Success",
+    "Quotes_details": [
+        {
+            "RequestId": 1,
+            "Description": "fnld dfds fdsf s",
+            "Date": "01-01-1970",
+            "ApprovedTo": "c21",
+            "TotalRequest": 2,
+            "TotalResponse": 6
+        }
+    ]
+}
+    => {"ResponseCode":"201","ResponseMsg":"No data found for this Userid or Project ID "}
+
+
+
+######################quotes-details  web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> quotes-details
+    => Keys -> {"RequestId":"1"}
+  => Response -> JSON String
+  {"ResponseCode":"200","ResponseMsg":"Success","quotes-details":[{"CompanyId":"C12","Value":"HELLO","CompanyName":"????????","distance":"25"}]}
+  {"ResponseCode":"201","ResponseMsg":"No Records Founds "}
+
+######################     GetCompanyQuotes     #####################
+GetCompanyQuotes=>
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> GetCompanyQuotes
+    => Keys -> {"RequestId":"1","CompanyId":"C12"}
+  => Response -> JSON String
+  => {"ResponseCode":"200","ResponseMsg":"Success","Services":[{"ServiceName":"Design","SubServices":[{"Id":2,"SubServicesName":"Structural "}]},{"ServiceName":"Design","SubServices":[{"Id":1,"SubServicesName":"Architectural "}]},{"ServiceName":"Design","SubServices":[{"Id":1,"SubServicesName":"Architectural "}]}]}
+    => {"ResponseCode":"201","ResponseMsg":"No Data Available for this request id "}
+
+
+
+######################GET SERVIVCES TYPE  web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> GetServicesType
+    => Keys -> No Required
+  => Response -> JSON String
+  {"ResponseCode":"200","ResponseMsg":"Success","Services":[[{"ServiceId":1,"ServiceName":"Design","SubServices":[{"Id":1,"SubServicesName":"Architectural "},{"Id":2,"SubServicesName":"Structural "}]}],[{"ServiceId":2,"ServiceName":"Approval","SubServices":[{"Id":3,"SubServicesName":"Municipality "},{"Id":4,"SubServicesName":"Electrical "}]}],[{"ServiceId":3,"ServiceName":"Contract","SubServices":[{"Id":5,"SubServicesName":"ContractSubservices1"},{"Id":6,"SubServicesName":"ContractSubservices2"}]}],[{"ServiceId":4,"ServiceName":"Supervision","SubServices":[{"Id":7,"SubServicesName":"SupervisionSubservices1"},{"Id":8,"SubServicesName":"SupervisionSubservices2"}]}]]}
+
+
+######################GET GetDocumants   web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> GetDoc
+    => Keys -> {"ProjectId":1}
+  => Response -> JSON String
+{"ResponseCode":"200","ResponseMsg":"Success","Documents":[{"DocumentAttachID":"104","Subject":"Agreement ","AttachTypeId":"Agreement"}]}
+{"ResponseCode":"201","ResponseMsg":"No Documents founds for this project id "}
+
+
+######################GET Consultant   web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey ->GetConsultant
+    => Keys -> {"CityId":"1"}
+  => Response -> JSON String
+{"ResponseCode":"200","ResponseMsg":"Success","CompanyDetails":[{"CompanyID":"DE2040","CompanyName":"Demo Engineering Consultant","Latitude":"25.805","longitude":"55.963","WebAddress":"","Address":"Salman Building , Ras Al Khaima","Email":"Rajamanikkam.s@gmail.com","MobileNo":null,"LogoImg":"http:\/\/mysmartpro.com\/Documents\/DE2040\/logo_DE2040_2_Demo.png"}]}
+{"ResponseCode":"201","ResponseMsg":"No Company Details founds for this city id "}
+
+
+######################ApproveConsultant  web service #####################
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey ->ApproveConsultant
+    => Keys -> {"RequestId":"1","CompanyId":"1"}
+  => Response -> JSON String
+{"ResponseCode":"200","ResponseMsg":"Company Approve Successfully"}
+{"ResponseCode":"201","ResponseMsg":"An error occured "}
+
+
+###################### Save Consultant web service #####################
+
+SaveInviteConsultant=>
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> SaveInviteConsultant
+    => Keys -> {"ProjectId":"1","Userid":"2","Description":"fnld dfds fdsf s","QuotesIn":"QuotesIn","Services":{"ServiceId":"1","SubServiceId":"2"},"Attachment":{"AttachmentId":"1"},"Company":{"companyid":"1","distance":"25km"}}
+  => Response -> JSON String
+    => {"ResponseCode":"200","ResponseMsg":"Consultant Add sucessfully"}
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+#################### Save Invite My Consultant #########################
+
+SaveInviteMyConsultant=>
+  => URL -> http://webprojects.work/smartpro/api/consultant-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> SaveInviteMyConsultant
+    => Keys -> {"ProjectId":"1","UserID":"2","Description":"fnld dfds fdsf s","Attachment":{"AttachmentId":"1"},"companyid":"1"}
+  => Response -> JSON String
+    => {"ResponseCode":"200","ResponseMsg":"Consultant Add sucessfully"}
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+this detail will save into requestlist table & attachment will save into myconsaltentAttachment table
+
+
+
+
+
+
+
+

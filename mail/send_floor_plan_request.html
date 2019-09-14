@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head><title>Floor Plan Request</title></head>
+    <body style="background-color: #ffffff;">
+        <!-- Heading Content -->
+        <div style="background-color: #f37c3a; color: #ffffff; padding: 15px 20px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+            <table style="width: 100%; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;">Hi,</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;">Greetings from MySmartPro!</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- End Heading Content -->
+
+        <!-- Message Body -->
+        <div style="background-color: #ffffff; padding: 15px 20px;">
+
+            <div>You have received a floor plan request for <b>{floor_plan_name}</b> from <b>{customer_name}</b> at <i>{requested_date}</i></div>
+
+            <h4 style="margin-bottom: 5px;">Customer contact details are as below:</h4>
+
+            <table style="width: 100%; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;"><b>Email</b></td>
+                        <td style="padding: 8px; vertical-align: middle;">::</td>
+                        <td style="padding: 8px; vertical-align: middle;">{customer_email}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;"><b>Phone</b></td>
+                        <td style="padding: 8px; vertical-align: middle;">::</td>
+                        <td style="padding: 8px; vertical-align: middle;">{customer_phone}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- End Message Body -->
+
+        <style>
+            @media (max-width: 400px) {
+                .content-table { display: block;}
+            }
+        </style>
+
+        <!-- Floor Plan Details -->
+        <div style="background-color: #fffff; padding: 15px 20px;">
+            <h3>Requested Floor Plan Details</h3>
+            <table style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; border-collapse: collapse;" class="content-table">
+                <thead style="background-color: #f37c3a; color: #ffffff;">
+                    <tr>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Sr. No</th>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Item</th>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Unit Price</th>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Qty</th>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Item Price</th>
+                        <th style="padding: 8px; vertical-align: middle; border: 1px solid #dddddd;">Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {table_content}
+                </tbody>
+            </table>
+        </div>
+        <!-- End Floor Plan Details -->
+
+        <!-- Footer -->
+        <div style="background-color: #f37c3a; color: #ffffff; padding: 15px 20px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+            <table style="width: 100%; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;">Thank You,</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; vertical-align: middle;">Team ABC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- End Footer -->
+    </body>
+</html>

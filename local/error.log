@@ -1,0 +1,190 @@
+[02-Feb-2017 17:19:16 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6.30\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:19:17 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\go-pear.phar on line 1271
+[02-Feb-2017 17:19:42 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:19:42 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\go-pear.phar on line 1271
+[02-Feb-2017 17:21:57 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:22:27 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:22:30 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:22:30 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:22:31 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\PEAR\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\PEAR\go-pear.phar on line 1271
+[02-Feb-2017 17:22:53 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:23:31 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:24:43 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:24:52 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:24:52 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:24:52 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:24:52 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 1271
+[02-Feb-2017 17:25:42 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:25:42 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:25:42 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:25:42 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 1272
+[02-Feb-2017 17:25:54 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:25:54 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:25:54 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:25:54 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 3650
+[02-Feb-2017 17:26:09 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:26:09 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:09 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:09 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 4009
+[02-Feb-2017 17:26:37 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:26:37 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:37 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:37 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 4351
+[02-Feb-2017 17:26:55 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:26:55 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:55 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:26:55 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 3651
+[02-Feb-2017 17:27:34 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:27:34 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:27:34 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:27:34 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '<' in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 4352
+[02-Feb-2017 17:28:41 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:28:41 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:28:41 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:28:41 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 1271
+[02-Feb-2017 17:29:04 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:29:04 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:29:04 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:29:04 Asia/Kolkata] PHP Warning:  require_once(phar://go-pear.phar/index.php): failed to open stream: manifest cannot be larger than 100 MB in phar "C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar" in C:\Program Files (x86)\PHP\v5.6.30\pear\go-pear.phar on line 1271
+[02-Feb-2017 17:30:16 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:30:17 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:30:17 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:52:06 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:52:07 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:52:07 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:52:07 Asia/Kolkata] PHP Fatal error:  Call to undefined method PEAR_Error::set() in phar://C:/Program Files (x86)/PHP/v5.6.30/pear/go-pear.phar/PEAR/Start.php on line 322
+[02-Feb-2017 17:52:31 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:52:31 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:52:31 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:53:08 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:53:08 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:53:08 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:54:27 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:54:27 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:54:27 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:55:17 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 17:55:17 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:55:17 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:55:17 Asia/Kolkata] PHP Fatal error:  Call to undefined method PEAR_Error::set() in phar://C:/Program Files (x86)/PHP/v5.6.30/pear/go-pear.phar/PEAR/Start.php on line 322
+[02-Feb-2017 17:59:45 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 17:59:45 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 17:59:45 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 18:00:50 Asia/Kolkata] PHP Warning:  PHP Startup: PDO: Unable to initialize module
+Module compiled with module API=20050922
+PHP    compiled with module API=20131226
+These options need to match
+ in Unknown on line 0
+[02-Feb-2017 18:05:54 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo.dll' - The specified module could not be found.
+ in Unknown on line 0
+[02-Feb-2017 18:05:55 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0
+[02-Feb-2017 18:05:55 Asia/Kolkata] PHP Warning:  PHP Startup: Unable to load dynamic library 'C:\Program Files (x86)\PHP\v5.6\ext\php_pdo_sqlsrv_56_nts.dll' - %1 is not a valid Win32 application.
+ in Unknown on line 0

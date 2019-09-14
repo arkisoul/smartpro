@@ -1,0 +1,81 @@
+Project Management
+Project Selection=>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> project-select
+    => Keys -> UserID, ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'ProjectName': '','TotalUnviewReport'', 'TotalUnApprovedDoc': '', 'TotalUnviewLetter'', 'SliderImages': ['img1', 'img2', 'img3',...],
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+
+Project Detail =>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> projectdetail
+    => Keys -> UserID, ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'ProjectName': '', 'Location': '', 'ProjectType': '', 'Cost': '', 'SitePlan': '', 'FloorLevel': ''
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+
+MileStoneDetail=>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> milestonedetail
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success','Milestones': ['MilestoneID', 'MilestoneName', 'PlanEndDate', 'ActualEndDate', 'CompletePercentage', 'Status'] Key for status {1# Not Start, 2# Delayed / After Time, 3# Progress, 4# Complete }
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+PaymentDetail=>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> payment-detail
+    => Keys -> UserID, ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success','', 'TotalAmount': '', 'RemainingAmount': '', 'PaidAmount': ''
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+
+Map Details =>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> map
+    => Keys -> ProjectID
+    => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Latitude': '', 'Longitude': ''
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+
+Balance Summary =>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> balancesummary
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'TotalCash': '', 'TotalIncome': '', 'Balance': '','InvoiceDetail': ['InvoiceNumber': '', 'TransactionTypeID': '', 'InvoiceDate': '', 'InvoiceTotal': '', 'Notes': ''],'ReceiptDetail': ['InvoiceNumber': '', 'TransactionTypeID': '', 'InvoiceDate': '', 'InvoiceTotal': '', 'Notes': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Letters =>
+  => URL -> http://DOMAINNAME/api/project-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> letters
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'Senders': ['LetterID': '', 'SenderName': '', 'SendDate': '', 'Subject': '', 'LetterUrl': ''], 'Receivers': ['LetterID': '', 'ReceiverName': '', 'ReceiveDate': '', 'Subject': '', 'LetterUrl': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

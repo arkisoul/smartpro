@@ -1,0 +1,56 @@
+User Management
+
+Login =>
+  => URL -> http://webprojects.work/smartpro/api/user-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> login
+    => Keys -> UserID, CompanyID, Password, FCMID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'UserID': '', 'CompanyID': '', 'CustomerName': '', 'CustomerPhoto': '', 'CompanyName': '', 'CompanyLogo': '', 'FCMStatus': 'Success/Fail', 'Projects': ['ProjectID': '', 'ProjectName': ''], 'SliderImages': ['img1', 'img2', 'img3',...], 'RemainingAmount': '', 'UnApprovedDoc': '', 'TotalReports': '', 'LetterCount': '', 'Announcements': ['AnnouncementTitle': '', 'AnnouncementDescription': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Home/Dashboard Detail => Need to update api
+  => URL -> http://webprojects.work/smartpro/api/user-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> home
+    => Keys -> UserID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'UserID': '', 'CompanyID': '', 'CustomerName': '', 'CustomerPhoto': '', 'CompanyName': '', 'CompanyLogo': '', 'Projects': ['ProjectID': '', 'ProjectName': ''], 'SliderImages': ['img1', 'img2', 'img3',...], 'RemainingAmount': '', 'UnApprovedDoc': '', 'TotalReports': '', 'LetterCount': '', 'Announcements': ['AnnouncementTitle': '', 'AnnouncementDescription': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Forgot UserID/Password =>
+  => URL -> http://webprojects.work/smartpro/api/user-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> forgot
+    => Keys -> Type(userid/password), Channel(sms/email), ID(mobile number/email)
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Change Password =>
+  => URL -> http://webprojects.work/smartpro/api/user-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> changepass
+    => Keys -> UserID, OldPassword, NewPassword
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Register FCM ID =>
+  => URL -> http://webprojects.work/smartpro/api/user-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> reg-fcm
+    => Keys -> UserID, FCMID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'

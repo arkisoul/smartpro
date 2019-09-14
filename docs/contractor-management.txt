@@ -1,0 +1,49 @@
+######################SaveInviteContractor web service #####################
+
+SaveInviteContractor=>
+  => URL -> http://webprojects.work/smartpro/api/contractor-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> SaveInviteContractor
+    => Keys ->
+    in case of consultant
+    {"RequestTo":"consultant","UserID":"1","ProjectId":"1","Desc":"descript","CompanyId":"1","Attachment":{"AttachmentId":"1"},"Contractor":{"ContractorId":"1","Distance":"1"}}
+    in case of contractor
+    {"RequestTo":"contractor","UserID":"1","ProjectId":"1","Desc":"descript","TenderTime":"1","TenderDate":"1","Attachment":{"AttachmentId":"1"},"Contractor":{"ContractorId":"1","Distance":"1"}}
+  => Response -> JSON String
+  {"ResponseCode":"200","ResponseMsg":"Success"}
+
+
+######################GetTenderRequest web service #####################
+
+GetTenderRequest=>
+  => URL -> http://webprojects.work/smartpro/api/contractor-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> GetTenderRequest
+    => Keys ->
+    {"ProjectId":"1","UserId":"1"}
+  => Response -> JSON String
+  {"ResponseCode":"200","ResponseMsg":"Success","Request":[{"Id":20,"Descriptions":"descript","Type":"contractor","SubmittedDate":{"date":"2017-08-29 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Calcutta"},"Status":"Approve","TotalRequest":1,"TotalResponse":0,"TotalRemaining":1},{"Id":21,"Descriptions":"descript","Type":"contractor","SubmittedDate":{"date":"2017-08-29 00:00:00.000000","timezone_type":3,"timezone":"Asia\/Calcutta"},"Status":"Response","TotalRequest":2,"TotalResponse":1,"TotalRemaining":1}]}
+
+
+
+######################GetViewTender web service #####################
+
+GetTenderRequest=>
+  => URL -> http://webprojects.work/smartpro/api/contractor-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> GetViewTender
+    => Keys ->
+    {"RequestId":"1"}
+  => Response -> JSON String
+  case Consultant
+  {"ResponseCode":"200","ResponseMsg":"Success","Details":[{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":null,"ContractorName":null,"Type":"GreaterThen"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":null,"ContractorName":null,"Type":"GreaterThen"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":"25","ContractorName":null,"Type":"GreaterThen"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":"22","ContractorName":null,"Type":"GreaterThen"}]}
+  case contractor
+  {"ResponseCode":"200","ResponseMsg":"Success","Details":[{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":null,"ContractorName":null,"Type":"equal"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":null,"ContractorName":null,"Type":"equal"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":"25","ContractorName":null,"Type":"equal"},{"ContractorId":"1234","CompanyId":"C1","value":"HELLO","distance":"22","ContractorName":null,"Type":"equal"}]}
+
+

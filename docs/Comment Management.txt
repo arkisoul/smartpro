@@ -1,0 +1,54 @@
+Comment Management
+
+Fetch => From CustomerComments Table
+  => URL -> http://webprojects.work/smartpro/api/comment-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> fetch
+    => Keys -> ProjectID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'ProjectID': '', 'Comments': ['CommentID': '', 'Comment': '', 'CommentDate': '', 'ReadComments': '', 'UnReadComments': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Fetch All Comments => From ReplyForCustomerComments Related to a Comment From CustomerComments Table
+  => URL -> http://webprojects.work/smartpro/api/comment-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> fetch-all
+    => Keys -> CommentID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Comments': ['CommentID': '', 'ReplyID': '', 'ResponseID': '', 'Comment': '', 'ReplyDate': '', 'ReplyFrom': '', 'Url': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Add New => In CustomerComments Table
+  => URL -> http://webprojects.work/smartpro/api/comment-management.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (newcc), ProjectID, CustomerID, Comment, Date(w time), Attach, Source (ReportID/Comment)
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Add New => In ReplyForCustomerComments Table
+  => URL -> http://webprojects.work/smartpro/api/comment-management.php
+  => Request type -> POST
+  => Content type ->  multipart/form-data
+  => Request Data -> Individual Variables
+    => Keys -> Action (newrcc), UserID, CommentID, Comment, Date(w time), Attach
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success', 'Comments': ['CommentID': '', 'ReplyID': '', 'ResponseID': '', 'Comment': '', 'ReplyDate': '', 'ReplyFrom': '', 'Url': '']
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
+
+Close Comment => Updates comment status to close in CustomerComments and ReplyForCustomerComments Table
+  => URL -> http://webprojects.work/smartpro/api/comment-management.php
+  => Request type -> POST
+  => Content type ->  application/x-www-form-urlencoded
+  => Request Data -> JSON String
+    => ParentKey -> close
+    => Keys -> UserID, CommentID
+  => Response -> JSON String
+    => 'ResponseCode': '200', 'ResponseMsg': 'Success'
+    => 'ResponseCode': '201', 'ResponseMsg': 'Error'
